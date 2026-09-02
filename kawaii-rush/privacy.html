@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Kawaii Rush</title>
+    <title>Privacy Policy - Kawaii Rush: Match Puzzle - LoSpider</title>
     <style>
-        /* Сброс системных отступов */
+        /* Сброс всех системных отступов */
         *, *::before, *::after {
             box-sizing: border-box !important;
             margin: 0;
@@ -18,7 +18,7 @@
             color: #333;
         }
 
-        /* Шапка LoSpider */
+        /* Шапка */
         header.custom-header {
             background-color: #2c3e50 !important;
             padding: 20px !important;
@@ -46,12 +46,10 @@
         }
 
         nav.custom-nav {
-            display: flex !important;
-            align-items: center !important;
+            display: block !important;
         }
 
-        nav.custom-nav > a,
-        .dropdown-trigger {
+        nav.custom-nav a {
             color: #ffffff !important;
             text-decoration: none !important;
             margin-left: 20px !important;
@@ -59,67 +57,13 @@
             transition: color 0.3s !important;
             display: inline-block !important;
             line-height: 1 !important;
-            cursor: pointer;
         }
 
-        nav.custom-nav > a:hover,
-        .dropdown:hover .dropdown-trigger {
+        nav.custom-nav a:hover {
             color: #1abc9c !important;
         }
 
-        /* Выпадающее меню проектов */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            right: 0;
-            top: 100%;
-            background-color: #ffffff !important;
-            min-width: 220px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-            border-radius: 6px;
-            overflow: hidden;
-            z-index: 1000;
-            border: 1px solid #e2e8f0;
-        }
-
-        .dropdown::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 100%;
-            height: 15px;
-            background: transparent;
-        }
-
-        .dropdown-menu a {
-            color: #2c3e50 !important;
-            padding: 12px 16px !important;
-            margin: 0 !important;
-            display: block !important;
-            text-decoration: none !important;
-            font-size: 0.95rem !important;
-            line-height: 1.4 !important;
-            text-align: left !important;
-            background-color: #ffffff !important;
-            transition: background 0.2s, color 0.2s !important;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #f1f5f9 !important;
-            color: #1abc9c !important;
-        }
-
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        /* Выбор языка документа */
+        /* Мобильный контейнер для выбора языка */
         .lang-selector-container {
             max-width: 800px;
             margin: 20px auto 0 auto;
@@ -128,6 +72,7 @@
             justify-content: flex-end;
         }
 
+        /* Стили выпадающего списка языков */
         .lang-select {
             padding: 8px 12px;
             font-size: 1rem;
@@ -147,7 +92,7 @@
             color: #ffffff;
         }
 
-        /* Область контента политики */
+        /* Область контента (белое поле) */
         main {
             max-width: 800px;
             margin: 20px auto 40px auto;
@@ -158,6 +103,7 @@
             line-height: 1.6;
         }
 
+        /* Стили элементов текста политики */
         h1 {
             font-size: 20pt;
             color: #111111;
@@ -275,7 +221,7 @@
             white-space: pre-line;
         }
 
-        /* Адаптивность для мобильных устройств */
+        /* Адаптивность для мобильных */
         @media (max-width: 600px) {
             .header-container {
                 flex-direction: column !important;
@@ -284,14 +230,8 @@
             .header-container h1 {
                 margin-bottom: 15px !important;
             }
-            nav.custom-nav > a,
-            .dropdown-trigger {
+            nav.custom-nav a {
                 margin: 0 10px !important;
-            }
-            .dropdown-menu {
-                right: auto;
-                left: 50%;
-                transform: translateX(-50%);
             }
             .lang-selector-container {
                 justify-content: center;
@@ -310,14 +250,8 @@
         <div class="header-container">
             <h1>LoSpider</h1>
             <nav class="custom-nav">
-                <a href="https://leonavg.github.io/lospider/">Home</a>
-                <div class="dropdown">
-                    <span class="dropdown-trigger">Privacy Policy ▾</span>
-                    <div class="dropdown-menu">
-                        <a href="https://leonavg.github.io/lospider/privacy.html">My Puzzle Alarm Clock</a>
-                        <a href="privacy.html">Kawaii Rush</a>
-                    </div>
-                </div>
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy Policy</a>
             </nav>
         </div>
     </header>
@@ -330,118 +264,157 @@
     </div>
 
     <main>
-        <!-- ENGLISH VERSION -->
+        
         <div id="privacy-en">
             <h1>PRIVACY POLICY</h1>
-            <div class="subtitle">Last updated September 02, 2026</div>
+            <div class="subtitle">Last updated September 2, 2026</div>
 
-            <p>This Privacy Notice for <strong>LoSpider</strong> ("we," "us," or "our"), describes how and why we might access, collect, store, use, and/or share ("process") your personal information when you use our services ("Services"), including when you:</p>
+            <p>This Privacy Notice for Yakovlev Pavel Dmitrievich (operating under the trade name LoSpider) ("<strong>we</strong>," "<strong>us</strong>," or "<strong>our</strong>"), describes how and why we might access, collect, store, use, and/or share ("<strong>process</strong>") your personal information when you use our services ("<strong>Services</strong>"), including when you:</p>
             <ul>
-                <li>Download and play our mobile application (<strong>Kawaii Rush: Match Puzzle</strong>), or any other application of ours that links to this Privacy Notice[cite: 3]</li>
-                <li>Engage with us in other related ways, including customer support and inquiries[cite: 1, 3]</li>
+                <li>Download, install, and play our mobile game (<strong>Kawaii Rush: Match Puzzle</strong>), or any other application or game of ours that links to this Privacy Notice</li>
+                <li>Engage with us in other related ways, including any customer support, marketing, or events</li>
             </ul>
 
-            <p>Questions or concerns? Reading this Privacy Notice will help you understand your privacy rights and choices[cite: 1]. We are responsible for making decisions about how your personal information is processed[cite: 1]. If you do not agree with our policies and practices, please do not use our Services[cite: 1]. If you still have any questions or concerns, please contact us at <strong>lospider@proton.me</strong>[cite: 1, 3].</p>
+            <p><strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We act as the Data Controller responsible for deciding how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you have any questions or concerns, please contact us at <a href="mailto:lospider@proton.me">lospider@proton.me</a>.</p>
 
-            <h2>SUMMARY OF KEY POINTS</h2>
-            <div class="short-box">
-                This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below[cite: 1].
+            <div class="toc">
+                <h3>SUMMARY OF KEY POINTS</h3>
+                <p><em>This summary provides key points from our Privacy Notice, but you can find out more details about any of these topics by using our table of contents below.</em></p>
+                <p><strong>What personal information do we process?</strong> When you play our game or interact with our Services, we may process information depending on how you interact with the game, your device characteristics, and the features you use.</p>
+                <p><strong>Do we process any sensitive personal information?</strong> We do not process sensitive personal information (such as racial or ethnic origins, sexual orientation, or religious beliefs).</p>
+                <p><strong>Does the application use AI technologies?</strong> The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
+                <p><strong>Do we collect information from third parties?</strong> We and our third-party partners (such as ad networks and analytics providers) collect technical device identifiers, crash logs, and general gameplay metrics.</p>
+                <p><strong>How do we process your information?</strong> We process your information to provide and maintain the game, deliver personalized advertising, perform analytics, prevent fraud, and comply with applicable laws.</p>
+                <p><strong>With whom do we share personal information?</strong> We share data with trusted third-party service providers, including Google Play Services, Google Analytics for Firebase, Firebase Crashlytics, Unity, and AppLovin.</p>
+                <p><strong>How do we keep your information safe?</strong> We maintain technical and organizational safeguards. However, no electronic transmission over the Internet can be guaranteed 100% secure.</p>
+                <p><strong>What are your rights?</strong> Depending on your location (e.g. EEA, UK, US/California), you have rights to access, correct, or delete your personal data, as well as to withdraw consent.</p>
             </div>
-
-            <p><strong>What personal information do we process?</strong> The Application does not require user registration or account creation[cite: 1, 3]. All puzzle progress and game levels remain stored locally on your mobile device. However, our third-party advertising networks and diagnostics tools automatically process non-identifying technical data (such as Google Advertising ID, operating system specifications, and coarse IP-derived location)[cite: 3].</p>
-            <p><strong>Do we process any sensitive personal information?</strong> We do not process sensitive personal information[cite: 1].</p>
-            <p><strong>Do we collect precise GPS location?</strong> No. The Application does not request or access fine GPS location permissions.</p>
-            <p><strong>How do we process your information?</strong> We process technical parameters to serve ads, evaluate marketing efficiency, ensure game security, and troubleshoot software errors[cite: 1, 3].</p>
-            <p><strong>With whom do we share information?</strong> Technical data is shared strictly with authorized ad mediation and analytics partners under written agreements[cite: 1, 3].</p>
 
             <div class="toc">
                 <h3>TABLE OF CONTENTS</h3>
                 <ul>
-                    <li><a href="#en-1">1. WHAT INFORMATION DO WE COLLECT?</a></li>
-                    <li><a href="#en-2">2. HOW DO WE PROCESS YOUR INFORMATION?</a></li>
-                    <li><a href="#en-3">3. WHAT LEGAL BASES DO WE RELY ON?</a></li>
-                    <li><a href="#en-4">4. WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</a></li>
-                    <li><a href="#en-5">5. WHAT IS OUR STANCE ON THIRD-PARTY SERVICES?</a></li>
-                    <li><a href="#en-6">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</a></li>
-                    <li><a href="#en-7">7. HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
-                    <li><a href="#en-8">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
-                    <li><a href="#en-9">9. WHAT ARE YOUR PRIVACY RIGHTS?</a></li>
-                    <li><a href="#en-10">10. CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
-                    <li><a href="#en-11">11. DO UNITED STATES RESIDENTS HAVE SPECIFIC RIGHTS?</a></li>
-                    <li><a href="#en-12">12. DO OTHER REGIONS HAVE SPECIFIC RIGHTS?</a></li>
-                    <li><a href="#en-13">13. DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
-                    <li><a href="#en-14">14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
-                    <li><a href="#en-15">15. HOW CAN YOU REVIEW, UPDATE, OR DELETE DATA?</a></li>
+                    <li>1. <a href="#section1">WHAT INFORMATION DO WE COLLECT?</a></li>
+                    <li>2. <a href="#section2">HOW DO WE PROCESS YOUR INFORMATION?</a></li>
+                    <li>3. <a href="#section3">WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a></li>
+                    <li>4. <a href="#section4">WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a></li>
+                    <li>5. <a href="#section5">WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES AND SDks?</a></li>
+                    <li>6. <a href="#section6">IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</a></li>
+                    <li>7. <a href="#section7">HOW LONG DO WE KEEP YOUR INFORMATION?</a></li>
+                    <li>8. <a href="#section8">HOW DO WE KEEP YOUR INFORMATION SAFE?</a></li>
+                    <li>9. <a href="#section9">WHAT ARE YOUR PRIVACY RIGHTS (GDPR & INTERNATIONAL)?</a></li>
+                    <li>10. <a href="#section10">DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS (CCPA/CPRA)?</a></li>
+                    <li>11. <a href="#section11">HOW DOES THE APPLICATION ADDRESS CHILDREN'S PRIVACY?</a></li>
+                    <li>12. <a href="#section12">CONTROLS FOR DO-NOT-TRACK FEATURES</a></li>
+                    <li>13. <a href="#section13">DO WE MAKE UPDATES TO THIS NOTICE?</a></li>
+                    <li>14. <a href="#section14">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a></li>
+                    <li>15. <a href="#section15">HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a></li>
                 </ul>
             </div>
 
-            <h2 id="en-1">1. WHAT INFORMATION DO WE COLLECT?</h2>
+            <h2 id="section1">1. WHAT INFORMATION DO WE COLLECT?</h2>
+            <h3>Personal information you disclose to us</h3>
             <div class="short-box">
-                <strong>In Short:</strong> We do not collect names or physical addresses for gameplay, but certain device characteristics and advertising identifiers are processed automatically by integrated SDKs[cite: 1, 3].
+                <strong>In Short:</strong> We collect personal information that you voluntarily provide to us when contacting us or using game features.
             </div>
-            <p><strong>Information Automatically Collected:</strong> When you access Kawaii Rush, automated systems and SDKs collect information that does not disclose your specific personal identity but provides operational and diagnostic feedback[cite: 1, 3]:</p>
-            <ul>
-                <li><strong>Device and Usage Identifiers:</strong> Google Advertising ID (GAID), IP address, device model, operating system version, browser/system language settings, and screen resolution[cite: 1, 3].</li>
-                <li><strong>Coarse Location Data:</strong> Approximate geographic location (country, city, and carrier/ISP) inferred from your IP address[cite: 1, 3]. Fine GPS coordinates are never collected.</li>
-                <li><strong>Diagnostic and Performance Data:</strong> Stack traces, load speeds, frame rates, and crash reports recorded via Firebase Crashlytics[cite: 1, 3].</li>
-            </ul>
+            <p>Registration is not mandatory to play <strong>Kawaii Rush: Match Puzzle</strong>. We collect information that you voluntarily provide when you reach out for customer support, report an issue, or communicate with us.</p>
+            <p><strong>Sensitive Information:</strong> We do not process sensitive personal information.</p>
+            <p><strong>Artificial Intelligence (AI):</strong> The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
 
-            <h2 id="en-2">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
+            <h3>Information automatically collected</h3>
             <div class="short-box">
-                <strong>In Short:</strong> We process data to run ads, protect our games, understand player usage, and fulfill legal requirements[cite: 1, 3].
+                <strong>In Short:</strong> Some information — such as device identifiers, IP address, and game activity — is collected automatically when you use the game.
             </div>
-            <p>We process collected technical data for the following legitimate purposes[cite: 1]:</p>
+            <p>When you play <strong>Kawaii Rush: Match Puzzle</strong>, the application and third-party SDKs automatically collect certain technical and usage information, including:</p>
             <ul>
-                <li><strong>To deliver and monetize through targeted ads:</strong> Displaying video ads, interstitial banners, and rewarded cues tailored to user interests[cite: 1, 3].</li>
-                <li><strong>To protect our Services:</strong> Preventing ad fraud, automated bots, and tampering[cite: 1, 3].</li>
-                <li><strong>To identify usage trends:</strong> Monitoring level completions, drop-offs, and game balancing metrics[cite: 1, 3].</li>
+                <li><strong>Device and Technical Identifiers:</strong> Mobile device type, manufacturer, operating system version, unique device identifiers (such as Google Advertising ID / IDFA), IP address, and network state.</li>
+                <li><strong>Usage and Gameplay Data:</strong> Game sessions, level progression, scores, feature interactions, and general in-game events.</li>
+                <li><strong>Diagnostics and Crash Reports:</strong> Application crash logs, stack traces, and performance metrics collected via Firebase Crashlytics and Unity to maintain application stability.</li>
+                <li><strong>Location Information:</strong> Non-precise geolocation data (such as country or city derived from your IP address or coarse network location) to provide localized content, analyze performance, and serve relevant advertising.</li>
             </ul>
 
-            <h2 id="en-3">3. WHAT LEGAL BASES DO WE RELY ON?</h2>
-            <p>Under the GDPR and UK GDPR, processing of personal information is anchored on the following lawful bases[cite: 1, 3]:</p>
-            <ul>
-                <li><strong>Consent:</strong> Where required for non-essential personalized ad targeting and analytics tracking[cite: 1, 3].</li>
-                <li><strong>Legitimate Interests:</strong> To maintain system security, debug game engine issues, and support sustainable game monetization[cite: 1, 3].</li>
-                <li><strong>Legal Obligations:</strong> Compliance with applicable accounting, tax, or regulatory directives[cite: 1, 3].</li>
-            </ul>
-
-            <h2 id="en-4">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+            <h2 id="section2">2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
             <div class="short-box">
-                <strong>In Short:</strong> We share data exclusively with trusted third-party ad networks and diagnostics vendors under strict Data Processing Agreements[cite: 1, 3].
+                <strong>In Short:</strong> We process your information to provide gameplay features, deliver relevant ads, analyze trends, fix errors, and maintain security.
             </div>
-            <p>Our integrated ad mediation and analytics partners include[cite: 1, 3]:</p>
+            <p>We process your personal information for purposes including:</p>
             <ul>
-                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>[cite: 3]</li>
-                <li><strong>Google Analytics for Firebase &amp; Crashlytics:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>[cite: 3]</li>
-                <li><strong>Unity Ads:</strong> <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/game-player-and-app-user-privacy-policy</a>[cite: 3]</li>
-                <li><strong>AppLovin:</strong> <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">https://www.applovin.com/privacy/</a>[cite: 1, 3]</li>
-                <li><strong>IronSource (Unity LevelPlay):</strong> <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.is.com/privacy-policy/</a>[cite: 1]</li>
-                <li><strong>Mintegral:</strong> <a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener noreferrer">https://www.mintegral.com/en/privacy</a>[cite: 1]</li>
-                <li><strong>Bigo Ads:</strong> <a href="https://www.bigossp.com/privacy" target="_blank" rel="noopener noreferrer">https://www.bigossp.com/privacy</a>[cite: 1]</li>
-                <li><strong>Start.io:</strong> <a href="https://www.start.io/policy/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.start.io/policy/privacy-policy/</a>[cite: 1]</li>
-                <li><strong>Yandex Mobile Ads &amp; AppMetrica:</strong> <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">https://yandex.com/legal/confidential/</a>[cite: 1]</li>
+                <li><strong>To provide and maintain the Game:</strong> Ensuring levels, saves, and gameplay features function properly.</li>
+                <li><strong>To deliver targeted and contextual advertising:</strong> Showing in-game video and interstitial ads via our monetization partners (Unity, AppLovin).</li>
+                <li><strong>To measure performance and analytics:</strong> Understanding user engagement, gameplay retention, and optimizing level design via Google Analytics for Firebase.</li>
+                <li><strong>To improve stability and fix bugs:</strong> Tracking crashes and technical glitches through Firebase Crashlytics.</li>
+                <li><strong>To ensure security and fraud prevention:</strong> Protecting our Services against cheating, unauthorized use, and security vulnerabilities.</li>
             </ul>
 
-            <h2 id="en-5">5. WHAT IS OUR STANCE ON THIRD-PARTY SERVICES?</h2>
-            <p>Advertisements displayed in the Application may redirect you to third-party stores, games, or websites[cite: 1]. We do not endorse and are not liable for the privacy practices of external platforms[cite: 1]. Review their respective privacy statements when interacting outside our Application[cite: 1].</p>
+            <h2 id="section3">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> Under GDPR and similar frameworks, we only process personal data when we have a valid legal basis (such as consent, contract performance, legitimate interests, or legal obligations).
+            </div>
+            <p>If you are located in the European Economic Area (EEA) or UK, our processing is based on:</p>
+            <ul>
+                <li><strong>Consent:</strong> Where you have granted permission for personalized advertising or analytics. You can withdraw your consent at any time.</li>
+                <li><strong>Contract Performance:</strong> Where processing is necessary to deliver the game service you have downloaded.</li>
+                <li><strong>Legitimate Interests:</strong> To improve our games, maintain cybersecurity, detect fraud, and optimize monetization, provided our interests do not override your privacy rights.</li>
+                <li><strong>Legal Obligation:</strong> To comply with legal, regulatory, or tax obligations.</li>
+            </ul>
 
-            <h2 id="en-6">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h2>
-            <p>Our operational coordination is located in Russia, with partner networks operating servers in the United States, EU, Singapore, and China[cite: 1]. When data is transferred from the EEA, UK, or Switzerland, we ensure adequate safeguards are implemented, including the European Commission's Standard Contractual Clauses (SCCs)[cite: 1, 3].</p>
+            <h2 id="section4">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> We share data with third-party service providers that support game monetization, analytics, and platform services.
+            </div>
+            <p>We integrate reliable third-party SDKs and service providers who have their own privacy policies. Below are the partners utilized by <strong>Kawaii Rush: Match Puzzle</strong>:</p>
+            <ul>
+                <li><strong>Google Play Services:</strong> Core platform services on Android — <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                <li><strong>Google Analytics for Firebase:</strong> App analytics and user engagement tracking — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                <li><strong>Firebase Crashlytics:</strong> Crash reporting and real-time stability monitoring — <a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                <li><strong>Unity (Unity Ads):</strong> Game engine services and in-game advertisement delivery — <a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                <li><strong>AppLovin:</strong> In-game ad monetization and mediation — <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+            </ul>
+            <p>Where required under GDPR Article 28, Data Processing Agreements (DPAs) are maintained with our partners to ensure the continuous protection of your data.</p>
 
-            <h2 id="en-7">7. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-            <p>We retain technical and diagnostic records only for as long as needed to fulfill the operational goals outlined herein, typically not exceeding 24 months[cite: 1, 3]. Aggregated statistical records that cannot identify individuals are kept indefinitely[cite: 3].</p>
+            <h2 id="section5">5. WHAT IS OUR STANCE ON THIRD-PARTY WEBSITES AND SDKs?</h2>
+            <p>The game may display advertisements linking to third-party websites or services. We do not control and are not responsible for the privacy practices, content, or policies of third-party advertisers. We encourage you to review their respective privacy policies upon navigating away from our game.</p>
 
-            <h2 id="en-8">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-            <p>We implement appropriate technical safeguards, including HTTPS/TLS encryption across all network calls[cite: 1, 3]. However, no internet transmission is 100% impenetrable against unauthorized security compromises[cite: 1, 3].</p>
+            <h2 id="section6">6. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> We and our third-party service providers may transfer, store, and process your information in servers located outside your country.
+            </div>
+            <p>Our operations and third-party partner servers are located internationally, including in the United States and the European Union. For transfers of personal data originating from the EEA/UK to third countries, appropriate safeguards are utilized, including the European Commission's Standard Contractual Clauses (SCCs).</p>
 
-            <h2 id="en-9">9. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-            <p>Depending on your geographic location (such as the EEA, UK, Switzerland, or Canada), you hold rights under applicable privacy laws, including rights of access, rectification, erasure, data portability, and the right to withdraw previously granted consent at any time[cite: 1, 3].</p>
+            <h2 id="section7">7. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> We keep personal data only for as long as necessary for the purposes outlined in this notice or as required by law.
+            </div>
+            <ul>
+                <li><strong>User-Provided Data:</strong> Retained for the duration of your use of the Application plus 12 months thereafter, unless longer retention is required by law.</li>
+                <li><strong>Automatically Collected Technical Data:</strong> Retained for up to 24 months from collection.</li>
+                <li><strong>Aggregated and Anonymized Data:</strong> Retained indefinitely, as it cannot be linked to any individual user.</li>
+            </ul>
 
-            <h2 id="en-10">10. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
-            <p>Most operating systems offer Do-Not-Track or Opt-Out of Ad Tracking signals[cite: 1]. Because no universal technological standard exists for interpreting DNT signals, we do not respond directly to automated web browser DNT headers at this stage[cite: 1].</p>
+            <h2 id="section8">8. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> We implement administrative, technical, and physical safeguards to protect your personal data.
+            </div>
+            <p>Access to technical and support data is strictly restricted. In the unlikely event of a personal data breach posing risks to user rights, we will notify the competent supervisory authority within 72 hours in compliance with GDPR guidelines, as well as affected individuals where required by law.</p>
 
-            <h2 id="en-11">11. DO UNITED STATES RESIDENTS HAVE SPECIFIC RIGHTS?</h2>
-            <p>Residents of states such as California, Colorado, Connecticut, Virginia, and others are protected under regional statutes (such as the CCPA/CPRA)[cite: 1, 3]. Below is a summary of categories collected within the preceding 12 months[cite: 1]:</p>
+            <h2 id="section9">9. WHAT ARE YOUR PRIVACY RIGHTS (GDPR & INTERNATIONAL)?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> In many jurisdictions (such as the EEA and UK), you have the right to access, rectify, port, or erase your data, and withdraw consent.
+            </div>
+            <p>Under the GDPR and similar laws, your rights include:</p>
+            <ul>
+                <li><strong>Right of Access:</strong> Request a copy of your personal data.</li>
+                <li><strong>Right to Rectification:</strong> Request correction of inaccurate information.</li>
+                <li><strong>Right to Erasure ("Right to be forgotten"):</strong> Request deletion of your personal data.</li>
+                <li><strong>Right to Restrict or Object to Processing:</strong> Object to processing for targeted advertising or legitimate interests.</li>
+                <li><strong>Right to Withdraw Consent:</strong> Revoke consent for personalized ads at any time through in-game settings or device privacy options.</li>
+            </ul>
+            <p>To exercise your rights, email us at <a href="mailto:lospider@proton.me">lospider@proton.me</a>. You also have the right to file a complaint with your local Data Protection Authority (<a href="https://edpb.ec.europa.eu/about-edpb/members_en" target="_blank" rel="noopener noreferrer">European Data Protection Board</a>) or the UK ICO (<a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">ICO UK</a>).</p>
+
+            <h2 id="section10">10. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS (CCPA/CPRA)?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> California and US residents have specific statutory rights under CCPA/CPRA regarding the collection, deletion, and sharing of personal information.
+            </div>
+            <p>The table below summarizes categories of personal information collected and shared in connection with the game:</p>
 
             <table>
                 <thead>
@@ -454,235 +427,164 @@
                 <tbody>
                     <tr>
                         <td>A. Identifiers</td>
-                        <td>Real name, postal address, email, direct phone number[cite: 1]</td>
-                        <td><strong>NO</strong>[cite: 1]</td>
+                        <td>IP address, unique device identifiers, advertising IDs (e.g. Google Advertising ID)</td>
+                        <td><strong>YES</strong></td>
                     </tr>
                     <tr>
-                        <td>B. Personal records</td>
-                        <td>Financial or health records[cite: 1]</td>
-                        <td><strong>NO</strong>[cite: 1]</td>
+                        <td>B. Personal information (California Customer Records)</td>
+                        <td>Name, contact details, payment information</td>
+                        <td>NO</td>
                     </tr>
                     <tr>
-                        <td>C. Protected classifications</td>
-                        <td>Gender, age, race, religious beliefs[cite: 1]</td>
-                        <td><strong>NO</strong>[cite: 1]</td>
+                        <td>C. Protected classification characteristics</td>
+                        <td>Age, race, gender, nationality</td>
+                        <td>NO</td>
                     </tr>
                     <tr>
-                        <td>F. Internet/Network Activity</td>
-                        <td>Device identifiers, Advertising ID, crash dump logs[cite: 1]</td>
-                        <td><strong>YES</strong>[cite: 1]</td>
+                        <td>D. Commercial information</td>
+                        <td>In-app purchase history and records</td>
+                        <td>NO</td>
                     </tr>
                     <tr>
-                        <td>G. Geolocation Data</td>
-                        <td>Coarse IP-derived city and country[cite: 1]</td>
-                        <td><strong>YES</strong>[cite: 1]</td>
+                        <td>E. Biometric information</td>
+                        <td>Fingerprints, face scans</td>
+                        <td>NO</td>
                     </tr>
                     <tr>
-                        <td>L. Sensitive Information</td>
-                        <td>Precise GPS, biometric data, credentials[cite: 1]</td>
-                        <td><strong>NO</strong>[cite: 1]</td>
+                        <td>F. Internet or other similar network activity</td>
+                        <td>Gameplay events, crash logs, interaction with ads and features</td>
+                        <td><strong>YES</strong></td>
+                    </tr>
+                    <tr>
+                        <td>G. Geolocation data</td>
+                        <td>Coarse device location (country/city derived from IP)</td>
+                        <td><strong>YES</strong></td>
+                    </tr>
+                    <tr>
+                        <td>H. Audio, electronic, visual information</td>
+                        <td>Photos, microphone recordings</td>
+                        <td>NO</td>
+                    </tr>
+                    <tr>
+                        <td>I. Sensitive Personal Information</td>
+                        <td>Precise geolocation, government IDs, biometric data</td>
+                        <td>NO</td>
                     </tr>
                 </tbody>
             </table>
 
-            <p>You can opt out of the sharing or sale of personal data for cross-context behavioral advertising by resetting or deleting your Advertising ID directly in your Android device settings (<em>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</em>)[cite: 3].</p>
+            <p>We do not sell personal data for monetary consideration. However, under CCPA/CPRA definitions, sharing technical identifiers with ad networks (Unity, AppLovin) for cross-context behavioral advertising may be considered "sharing". You may opt out of personalized advertising via your mobile operating system settings (e.g., "Opt out of Ads Personalization" or "Delete Advertising ID" on Android).</p>
 
-            <h2 id="en-12">12. DO OTHER REGIONS HAVE SPECIFIC RIGHTS?</h2>
-            <p>Users in Australia, New Zealand, South Africa, and other jurisdictions retain rights to submit data inquiries and dispute resolution requests under their respective regional data protection authorities[cite: 1].</p>
-
-            <h2 id="en-13">13. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
-            <p>We may update this Privacy Notice periodically[cite: 1, 3]. The revised version will become effective immediately upon updating the "Last updated" date above[cite: 1].</p>
-
-            <h2 id="en-14">14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
-            <p>If you have questions, feedback, or requests regarding this Privacy Policy, contact us via email or mail[cite: 1]:</p>
-            <div class="contact-info">
-LoSpider
-ul. Pushkina, d. 22
-Samara, Sukhodol 446552
-Russia
-Email: lospider@proton.me[cite: 1]
+            <h2 id="section11">11. HOW DOES THE APPLICATION ADDRESS CHILDREN'S PRIVACY?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> The game is not directed to children under 16 years of age, and we do not knowingly collect personal information from children.
             </div>
+            <p><strong>Kawaii Rush: Match Puzzle</strong> is not intended for children under 16 years of age (or the applicable age of digital consent in your jurisdiction). We do not knowingly solicit or collect personally identifiable information from children under 16. If we become aware that personal data of a child has been collected without verifiable parental consent, we will promptly take steps to delete such information from our records. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:lospider@proton.me">lospider@proton.me</a>.</p>
 
-            <h2 id="en-15">15. HOW CAN YOU REVIEW, UPDATE, OR DELETE DATA?</h2>
-            <p>To request deletion of diagnostic or advertising logs, or to exercise your statutory privacy rights, please submit your request to <strong>lospider@proton.me</strong>[cite: 1, 3]. We respond to all verified requests within 30 days.</p>
+            <h2 id="section12">12. CONTROLS FOR DO-NOT-TRACK FEATURES</h2>
+            <p>Most browsers and mobile operating systems offer a Do-Not-Track ("DNT") setting. Because there is currently no universal industry standard for recognizing DNT signals, our systems do not respond to DNT signals at this time.</p>
+
+            <h2 id="section13">13. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
+            <div class="short-box">
+                <strong>In Short:</strong> Yes, we may update this Privacy Notice periodically to stay compliant with applicable laws.
+            </div>
+            <p>The revised version will be indicated by the "Last updated" date at the top of this page. We encourage you to review this Privacy Policy periodically to stay informed of our data protection practices.</p>
+
+            <h2 id="section14">14. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h2>
+            <p>If you have questions, comments, or data requests regarding this notice, you may contact the Data Controller at:</p>
+            <div class="contact-info">Data Controller: LoSpider (Yakovlev Pavel Dmitrievich)
+Location: Samara, Russian Federation
+Postal Address: ul. Pushkina, d. 22, Samara, Sukhodol 446552, Russia
+Email: lospider@proton.me</div>
+
+            <h2 id="section15">15. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h2>
+            <p>You can stop all collection of information by uninstalling <strong>Kawaii Rush: Match Puzzle</strong>. To request the deletion of your personal information, withdraw your consent, or submit a data access request, please email us at <a href="mailto:lospider@proton.me">lospider@proton.me</a>. We will process and respond to your request within the timeframes mandated by applicable data protection laws (typically within 30 days).</p>
         </div>
 
-        <!-- CHINESE VERSION -->
         <div id="privacy-zh" style="display: none;">
             <h1>隐私政策</h1>
             <div class="subtitle">最后更新日期：2026年9月2日</div>
 
-            <p>本隐私声明适用于 <strong>LoSpider</strong>（以下简称“我们”或“我们的”），阐述了在您使用我们的服务（以下简称“服务”）时，我们为何以及如何访问、收集、存储、使用和/或共享（统称“处理”）您的个人信息，包括当您：</p>
+            <p><strong>Yakovlev Pavel Dmitrievich</strong>（以商号 <strong>LoSpider</strong> 运营）（以下简称“<strong>我们</strong>”或“<strong>我们的</strong>”），向您说明当您使用我们的服务（以下简称“<strong>服务</strong>”）时，我们为何以及如何访问、收集、存储、使用和/或共享（“<strong>处理</strong>”）您的个人信息，包括当您：</p>
             <ul>
-                <li>下载并游玩我们的移动游戏（<strong>Kawaii Rush: Match Puzzle</strong>）或任何链接至本隐私政策的应用程序时[cite: 3]</li>
-                <li>以包括客服和反馈在内的其他相关方式与我们进行互动时[cite: 1, 3]</li>
+                <li>下载、安装并游玩我们的移动游戏（<strong>Kawaii Rush: Match Puzzle</strong>），或链接到本隐私政策的任何其他游戏及应用程序</li>
+                <li>以其他相关方式与我们互动，包括任何客户支持、营销活动或事件</li>
             </ul>
 
-            <p>如果您对本隐私声明有任何疑问，阅读本声明将帮助您了解自身的隐私权和选择[cite: 1]。如果您不同意我们的政策和做法，请不要使用我们的服务[cite: 1]。如仍有疑问，请通过 <strong>lospider@proton.me</strong> 与我们联系[cite: 1, 3]。</p>
+            <p><strong>如有疑问或疑虑？</strong> 阅读本隐私政策将帮助您了解您的隐私权和选择。如果您不同意我们的政策和惯例，请不要使用我们的服务。如果您仍有任何问题或疑虑，请通过发送电子邮件至 <a href="mailto:lospider@proton.me">lospider@proton.me</a> 与我们联系。</p>
 
-            <h2>要点摘要</h2>
-            <div class="short-box">
-                本摘要提供了隐私声明的关键要点。您可以通过每个要点后面的链接或通过下方目录查找各章节详细信息[cite: 1]。
+            <div class="toc">
+                <h3>要点总结</h3>
+                <p><strong>我们处理哪些个人信息？</strong> 当您游玩游戏或使用我们的服务时，我们可能会根据您与游戏的互动、设备特征以及所使用的功能来处理技术数据与设备信息。</p>
+                <p><strong>我们是否处理任何敏感个人信息？</strong> 我们不处理任何敏感个人信息（如种族、宗教信仰、生物识别等）。</p>
+                <p><strong>本应用是否使用人工智能（AI）技术？</strong> 本游戏不使用人工智能（AI）技术来处理您的个人数据或提供功能。</p>
+                <p><strong>我们如何处理您的信息？</strong> 我们处理信息是为了保障游戏正常运行、投放个性化广告、进行数据分析、修复崩溃漏洞并遵守法律法规。</p>
+                <p><strong>我们与谁共享个人信息？</strong> 我们与受信任的第三方服务提供商共享数据，包括 Google Play Services、Google Analytics for Firebase、Firebase Crashlytics、Unity 以及 AppLovin。</p>
+                <p><strong>儿童隐私保护：</strong> 本游戏不面向 16 岁以下的儿童，我们不会有意收集儿童的个人身份信息。</p>
             </div>
-
-            <p><strong>我们处理哪些个人信息？</strong> 本游戏无需注册任何个人账户[cite: 1, 3]。所有游戏关卡进度、分数和道具解锁均保存在您的本地移动设备上。然而，我们集成的广告与统计分析合作伙伴可能会处理不可识别个人身份的技术标识符（例如 Google 广告 ID、设备硬件参数以及基于 IP 地址的大致位置）[cite: 3]。</p>
-            <p><strong>我们是否处理敏感个人信息？</strong> 我们不会处理任何敏感个人信息[cite: 1]。</p>
-            <p><strong>我们是否收集精确的 GPS 定位？</strong> 否。本游戏不申请也不访问任何精确的 GPS 定位权限。</p>
-            <p><strong>我们如何处理您的信息？</strong> 我们处理技术参数以展示广告、评估营销活动效果、防止欺诈行为并保障应用程序的稳定性[cite: 1, 3]。</p>
-            <p><strong>我们与谁共享个人信息？</strong> 仅在严格的数据处理协议框架下，与经过认证的第三方广告聚合网络及分析诊断平台共享技术数据[cite: 1, 3]。</p>
 
             <div class="toc">
                 <h3>目录</h3>
                 <ul>
-                    <li><a href="#zh-1">1. 我们收集哪些信息？</a></li>
-                    <li><a href="#zh-2">2. 我们如何处理您的信息？</a></li>
-                    <li><a href="#zh-3">3. 我们依赖哪些法律依据？</a></li>
-                    <li><a href="#zh-4">4. 我们在何时与谁共享您的个人信息？</a></li>
-                    <li><a href="#zh-5">5. 我们对第三方服务的立场是什么？</a></li>
-                    <li><a href="#zh-6">6. 您的信息是否跨境传输？</a></li>
-                    <li><a href="#zh-7">7. 我们保留您的信息多长时间？</a></li>
-                    <li><a href="#zh-8">8. 我们如何保护您的信息安全？</a></li>
-                    <li><a href="#zh-9">9. 您的隐私权利有哪些？</a></li>
-                    <li><a href="#zh-10">10. 请勿追踪 (DNT) 控制</a></li>
-                    <li><a href="#zh-11">11. 美国居民是否拥有特定权利？</a></li>
-                    <li><a href="#zh-12">12. 其他地区居民是否拥有特定权利？</a></li>
-                    <li><a href="#zh-13">13. 我们是否会更新本政策？</a></li>
-                    <li><a href="#zh-14">14. 如何就本政策与我们联系？</a></li>
-                    <li><a href="#zh-15">15. 如何查阅、更新或删除数据？</a></li>
+                    <li>1. 我们收集哪些信息？</li>
+                    <li>2. 我们如何处理您的信息？</li>
+                    <li>3. 我们与谁共享您的个人信息？</li>
+                    <li>4. 数据保存与安全性</li>
+                    <li>5. 儿童隐私保护</li>
+                    <li>6. 您的隐私权利与数据删除</li>
+                    <li>7. 如何就本通知与我们联系</li>
                 </ul>
             </div>
 
-            <h2 id="zh-1">1. 我们收集哪些信息？</h2>
-            <div class="short-box">
-                <strong>简要概述：</strong> 游戏本身不收集姓名或电子邮箱，但集成的 SDK 会自动处理设备特征和广告标识符[cite: 1, 3]。
-            </div>
-            <p><strong>自动收集的信息：</strong> 当您游玩 Kawaii Rush 时，自动化系统和 SDK 会收集不会透露您真实身份的信息，以保障游戏运行、广告变现与故障排查[cite: 1, 3]：</p>
+            <h2>1. 我们收集哪些信息？</h2>
+            <h3>您向我们提供的信息</h3>
+            <p><strong>简而言之：</strong> 游玩 <strong>Kawaii Rush: Match Puzzle</strong> 无需注册账户。我们仅收集您在联系客服或反馈时主动提供的必要信息。</p>
+
+            <h3>自动收集的信息</h3>
+            <p><strong>简而言之：</strong> 当您运行游戏时，系统及第三方 SDK 会自动收集某些技术参数与使用数据。</p>
             <ul>
-                <li><strong>设备与使用标识符：</strong> Google 广告 ID (GAID)、IP 地址、设备型号、操作系统版本、系统语言及屏幕分辨率[cite: 1, 3]。</li>
-                <li><strong>大致位置数据：</strong> 基于 IP 地址推断的宏观地理区域（国家、城市及网络运营商）[cite: 1, 3]。绝不访问精确 GPS 坐标。</li>
-                <li><strong>崩溃与性能日志：</strong> 通过 Firebase Crashlytics 记录的系统堆栈调用、加载速度与崩溃报告[cite: 1, 3]。</li>
+                <li><strong>设备标识与技术数据：</strong> 设备型号、操作系统版本、IP 地址、广告标识符（如 Google Advertising ID / OAID）及网络状态。</li>
+                <li><strong>游戏与使用数据：</strong> 关卡进度、分数、游戏会话及交互行为。</li>
+                <li><strong>崩溃与性能诊断：</strong> 通过 Firebase Crashlytics 和 Unity 收集的崩溃日志与错误堆栈，用于排查故障与提升稳定性。</li>
+                <li><strong>粗略位置数据：</strong> 基于 IP 地址的粗略地理位置（如国家/城市），用于本地化适配、数据统计与广告展示。</li>
             </ul>
 
-            <h2 id="zh-2">2. 我们如何处理您的信息？</h2>
-            <div class="short-box">
-                <strong>简要概述：</strong> 我们处理数据用于呈现广告、保护服务安全、分析玩家使用趋势以及遵守法律[cite: 1, 3]。
-            </div>
-            <p>我们出于以下合法目的处理收集的技术数据[cite: 1]：</p>
+            <h2>2. 我们如何处理您的信息？</h2>
+            <p>我们处理个人信息的目的包括：</p>
             <ul>
-                <li><strong>提供并变现针对性广告：</strong> 呈现符合受众兴趣的视频激励广告、插屏广告和横幅[cite: 1, 3]。</li>
-                <li><strong>保护我们的服务：</strong> 防范广告欺诈、外挂机器人和数据篡改[cite: 1, 3]。</li>
-                <li><strong>分析使用趋势：</strong> 监控关卡完成度、流失率和游戏平衡性数据[cite: 1, 3]。</li>
+                <li><strong>维持游戏基本运行：</strong> 存储关卡进度、配置与游戏机制。</li>
+                <li><strong>广告投放与商业变现：</strong> 通过 Unity Ads 和 AppLovin 展示插屏与激励视频广告。</li>
+                <li><strong>数据统计与产品优化：</strong> 通过 Google Analytics for Firebase 分析用户留存与关卡难度。</li>
+                <li><strong>故障排除与安全保障：</strong> 监控崩溃异常，防范作弊与欺诈行为。</li>
             </ul>
 
-            <h2 id="zh-3">3. 我们依赖哪些法律依据？</h2>
-            <p>根据欧洲通用数据保护条例 (GDPR) 和英国 GDPR，我们处理数据的法律依据包括[cite: 1, 3]：</p>
+            <h2>3. 我们与谁共享您的个人信息？</h2>
+            <p>为了支持游戏的功能、分析与广告变现，我们集成了以下第三方合作伙伴的 SDK（第三方均有其独立的隐私政策）：</p>
             <ul>
-                <li><strong>同意 (Consent)：</strong> 适用于非必要的个性化广告追踪和深入统计[cite: 1, 3]。</li>
-                <li><strong>合法利益 (Legitimate Interests)：</strong> 用于维护系统稳定安全、排查引擎 Bug 以及支持游戏的可持续免费运营[cite: 1, 3]。</li>
-                <li><strong>法律义务 (Legal Obligations)：</strong> 遵守适用的财务、税务或监管要求[cite: 1, 3]。</li>
+                <li><strong>Google Play Services:</strong> 基础平台服务 — <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
+                <li><strong>Google Analytics for Firebase:</strong> 数据统计分析 — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
+                <li><strong>Firebase Crashlytics:</strong> 崩溃监测与稳定性分析 — <a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
+                <li><strong>Unity (Unity Ads):</strong> 游戏引擎及广告投放 — <a href="https://unity3d.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
+                <li><strong>AppLovin:</strong> 广告变现与聚合中介 — <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">隐私政策</a></li>
             </ul>
 
-            <h2 id="zh-4">4. 我们在何时与谁共享您的个人信息？</h2>
-            <div class="short-box">
-                <strong>简要概述：</strong> 我们仅在严格的数据处理协议约束下，与受信任的第三方广告网络和分析平台共享数据[cite: 1, 3]。
-            </div>
-            <p>我们集成的广告聚合及分析合作伙伴包含[cite: 1, 3]：</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">https://policies.google.com/privacy</a>[cite: 3]</li>
-                <li><strong>Google Analytics for Firebase &amp; Crashlytics:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">https://firebase.google.com/support/privacy</a>[cite: 3]</li>
-                <li><strong>Unity Ads:</strong> <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/game-player-and-app-user-privacy-policy</a>[cite: 3]</li>
-                <li><strong>AppLovin:</strong> <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener noreferrer">https://www.applovin.com/privacy/</a>[cite: 1, 3]</li>
-                <li><strong>IronSource (Unity LevelPlay):</strong> <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.is.com/privacy-policy/</a>[cite: 1]</li>
-                <li><strong>Mintegral:</strong> <a href="https://www.mintegral.com/en/privacy" target="_blank" rel="noopener noreferrer">https://www.mintegral.com/en/privacy</a>[cite: 1]</li>
-                <li><strong>Bigo Ads:</strong> <a href="https://www.bigossp.com/privacy" target="_blank" rel="noopener noreferrer">https://www.bigossp.com/privacy</a>[cite: 1]</li>
-                <li><strong>Start.io:</strong> <a href="https://www.start.io/policy/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.start.io/policy/privacy-policy/</a>[cite: 1]</li>
-                <li><strong>Yandex Mobile Ads &amp; AppMetrica:</strong> <a href="https://yandex.com/legal/confidential/" target="_blank" rel="noopener noreferrer">https://yandex.com/legal/confidential/</a>[cite: 1]</li>
-            </ul>
+            <h2>4. 数据保存与安全性</h2>
+            <p>用户提供的数据在服务使用期间及之后最多保留 12 个月；自动收集的技术日志最多保留 24 个月；匿名化汇总数据将永久保留用于统计。我们采取了合理的组织与技术措施保护您的数据安全。</p>
 
-            <h2 id="zh-5">5. 我们对第三方服务的立场是什么？</h2>
-            <p>游戏内展示的广告可能会将您重定向至第三方应用商店或外部网站[cite: 1]。我们不对外部实体的隐私实践承担责任[cite: 1]。请在离开我们的应用时查看第三方的隐私声明[cite: 1]。</p>
+            <h2>5. 儿童隐私保护</h2>
+            <p>本游戏不面向 16 岁以下的儿童。我们不会故意收集 16 岁以下儿童的个人信息。如果我们发现无意中收集了儿童的个人数据，我们将立即从服务器中将其删除。监护人如有疑问请通过邮箱与我们联系。</p>
 
-            <h2 id="zh-6">6. 您的信息是否跨境传输？</h2>
-            <p>我们的运营主体位于俄罗斯，而合作伙伴在全球（包括美国、欧盟、新加坡和中国）运营服务器[cite: 1]。当数据从欧洲经济区 (EEA) 移出时，我们均采用欧盟标准合同条款 (SCCs) 等适当保护措施[cite: 1, 3]。</p>
+            <h2>6. 您的隐私权利与数据删除</h2>
+            <p>根据适用的数据保护法律（如 GDPR、CCPA），您拥有查阅、更正、导出或请求删除您个人数据的权利，以及撤回个性化广告授权的权利。如需行使权利或申请删除数据，请发送邮件至 <a href="mailto:lospider@proton.me">lospider@proton.me</a>，我们将在法定周期（30日）内予以处理。</p>
 
-            <h2 id="zh-7">7. 我们保留您的信息多长时间？</h2>
-            <p>我们仅在实现本政策所述业务目的所需的最短时间内保留技术诊断记录，通常不超过 24 个月[cite: 1, 3]。无法识别任何个人的匿名汇总统计数据将永久保留[cite: 3]。</p>
-
-            <h2 id="zh-8">8. 我们如何保护您的信息安全？</h2>
-            <p>我们采取合理的技术安全防护措施，所有网络请求均采用 HTTPS/TLS 加密[cite: 1, 3]。然而，任何互联网数据传输都无法承诺绝对不发生安全漏洞[cite: 1, 3]。</p>
-
-            <h2 id="zh-9">9. 您的隐私权利有哪些？</h2>
-            <p>根据您所在的司法管辖区（如 EEA、英国、瑞士或加拿大），您享有访问、更正、删除、数据可携带以及随时撤回此前授予同意的法定权利[cite: 1, 3]。</p>
-
-            <h2 id="zh-10">10. 请勿追踪 (DNT) 控制</h2>
-            <p>由于目前尚未确立识别和执行 DNT 信号的统一技术行业标准，我们目前不对自动化浏览器 DNT 标头作出响应[cite: 1]。</p>
-
-            <h2 id="zh-11">11. 美国居民是否拥有特定权利？</h2>
-            <p>加利福尼亚州等美国各州法律（如 CCPA/CPRA）为居民赋予了知情权、删除权和选择退出权[cite: 1, 3]。过去 12 个月内收集的信息类别如下[cite: 1]：</p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>类别</th>
-                        <th>示例</th>
-                        <th>是否收集</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>A. 身份识别符</td>
-                        <td>真实姓名、邮寄地址、电子邮件、电话号码[cite: 1]</td>
-                        <td><strong>否</strong>[cite: 1]</td>
-                    </tr>
-                    <tr>
-                        <td>B. 个人记录</td>
-                        <td>财务状况或健康记录[cite: 1]</td>
-                        <td><strong>否</strong>[cite: 1]</td>
-                    </tr>
-                    <tr>
-                        <td>C. 受保护特征</td>
-                        <td>性别、年龄、宗教信仰[cite: 1]</td>
-                        <td><strong>否</strong>[cite: 1]</td>
-                    </tr>
-                    <tr>
-                        <td>F. 网络与设备活动</td>
-                        <td>设备型号、广告 ID、崩溃日志[cite: 1]</td>
-                        <td><strong>是</strong>[cite: 1]</td>
-                    </tr>
-                    <tr>
-                        <td>G. 地理位置数据</td>
-                        <td>基于 IP 推断的省市和国家[cite: 1]</td>
-                        <td><strong>是</strong>[cite: 1]</td>
-                    </tr>
-                    <tr>
-                        <td>L. 敏感信息</td>
-                        <td>高精度 GPS、生物识别、账户密码[cite: 1]</td>
-                        <td><strong>否</strong>[cite: 1]</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <p>您可以通过 Android 设备设置直接重置或停用广告标识符（<em>设置 &gt; Google &gt; 广告 &gt; 删除广告 ID</em>），以退出针对性跨站点广告共享[cite: 3]。</p>
-
-            <h2 id="zh-12">12. 其他地区居民是否拥有特定权利？</h2>
-            <p>澳大利亚、新西兰和南非等地区的居民同样享有依法向当地数据监管机构提出咨询与投诉的权利[cite: 1]。</p>
-
-            <h2 id="zh-13">13. 我们是否会更新本政策？</h2>
-            <p>我们可能会定期修订本隐私声明[cite: 1, 3]。更新版本在上方“最后更新日期”发生变动时立即生效[cite: 1]。</p>
-
-            <h2 id="zh-14">14. 如何就本政策与我们联系？</h2>
-            <p>如果您对本隐私政策有任何问题或建议，欢迎联系我们[cite: 1]：</p>
-            <div class="contact-info">
-LoSpider
-ul. Pushkina, d. 22
-Samara, Sukhodol 446552
-Russia
-电子邮箱：lospider@proton.me[cite: 1]
-            </div>
-
-            <h2 id="zh-15">15. 如何查阅、更新或删除数据？</h2>
-            <p>如需申请删除诊断日志或行使隐私权利，请向 <strong>lospider@proton.me</strong> 发送邮件，我们将在 30 天内依法处理并回复[cite: 1, 3]。</p>
+            <h2>7. 如何就本通知与我们联系</h2>
+            <p>如果您对本政策有任何疑问或意见，可通过电子邮件 <a href="mailto:lospider@proton.me">lospider@proton.me</a> 与数据控制者联系，或邮寄至：</p>
+            <div class="contact-info">Data Controller: LoSpider (Yakovlev Pavel Dmitrievich)
+Location: Samara, Russian Federation
+Postal Address: ul. Pushkina, d. 22, Samara, Sukhodol 446552, Russia
+Email: lospider@proton.me</div>
         </div>
+
     </main>
 
     <script>
@@ -691,6 +593,7 @@ Russia
             const zhBlock = document.getElementById('privacy-zh');
             const selectEl = document.getElementById('langSelect');
 
+            // Обновляем значение селектора
             if (selectEl) {
                 selectEl.value = lang;
             }
@@ -704,8 +607,11 @@ Russia
             }
         }
 
-        window.addEventListener('DOMContentLoaded', (event) => {
-            const userLang = navigator.language || navigator.userLanguage;
+        // Автоопределение языка при загрузке страницы
+        window.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage; 
+            
+            // Если язык системы китайский, автоматически показываем китайскую версию
             if (userLang && userLang.toLowerCase().startsWith('zh')) {
                 switchLang('zh');
             } else {
