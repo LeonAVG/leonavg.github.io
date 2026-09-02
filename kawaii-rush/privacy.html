@@ -123,56 +123,6 @@
             display: block;
         }
 
-        /* Выпадающее меню Privacy Policy */
-        .nav-dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background-color: #2c3e50;
-            min-width: 230px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
-            border-radius: 6px;
-            padding: 8px 0;
-            margin-top: 10px;
-            z-index: 1000;
-        }
-
-        .dropdown-menu::before {
-            content: '';
-            position: absolute;
-            top: -6px;
-            right: 20px;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-bottom: 6px solid #2c3e50;
-        }
-
-        .nav-dropdown:hover .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-menu a {
-            display: block !important;
-            margin: 0 !important;
-            padding: 10px 16px !important;
-            color: #ffffff !important;
-            font-size: 0.9rem !important;
-            text-align: left;
-            white-space: nowrap;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .dropdown-menu a:hover {
-            background-color: #34495e;
-            color: #1abc9c !important;
-        }
-
         /* Мобильный контейнер для выбора языка */
         .lang-selector-container {
             max-width: 800px;
@@ -358,11 +308,13 @@
                 padding: 20px;
             }
         }
-
     </style>
 </head>
 <body>
 
+    <header class="custom-header">
+        <div class="header-container">
+            <h1>LoSpider</h1>
             <nav class="custom-nav">
                 <a href="https://leonavg.github.io/lospider/" class="nav-link">Home</a>
                 <div class="dropdown">
@@ -373,6 +325,8 @@
                     </div>
                 </div>
             </nav>
+        </div>
+    </header>
 
     <div class="lang-selector-container">
         <select id="langSelect" class="lang-select" onchange="switchLang(this.value)">
@@ -901,3 +855,4 @@ Russia</div>
     </script>
 </body>
 </html>
+
