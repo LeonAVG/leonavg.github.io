@@ -2749,6 +2749,9 @@ rubiconproject.com, 23876, RESELLER, 0bfd66d529a55807
 
 # === BigoAds ===
 
+verve.com, 1016803, RESELLER, 0c8f5958fc2d6270
+pubmatic.com, 168141, RESELLER, 5d62403b186f2ace
+theappspark.com, 38135, RESELLER
 bigo.sg,y4reul9he3,DIRECT
 adingenious.com, 70392, RESELLER
 oko.uk, a4eb11dd-9bc5-4d77-9877-71f69dcfc08f, DIRECT, b3511ffcafb23a32
